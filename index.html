@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script defer src="main.js"></script>
@@ -52,8 +54,15 @@
         </div>
         <div class="container hero-container-flex">
             <div class="hero-content text-reveal">
-                <span class="badge">Nuevo Servicio de Detallado 2024</span>
-                <h1>El cuidado que tu auto <span>merece</span></h1>
+                <div class="badge-live mb-6">
+                    <span class="pulse-dot">
+                        <span class="dot-ping"></span>
+                        <span class="dot-inner"></span>
+                    </span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-primary">Nuevo Servicio de
+                        Detallado 2024</span>
+                </div>
+                <h1 class="text-glow">El cuidado que tu auto <span>merece</span></h1>
                 <p>Lavado premium, detallado experto y protección cerámica. Dejamos tu vehículo como salido de la
                     fábrica con productos de la más alta calidad.</p>
                 <div class="hero-actions action-reveal">

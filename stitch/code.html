@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinesiology Clinic - Elite Performance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d4d4",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102222",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-effect {
+            background: rgba(28, 39, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(17, 212, 212, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(to top, #102222 0%, rgba(16, 34, 34, 0.4) 50%, rgba(16, 34, 34, 0.1) 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(17, 212, 212, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<nav class="fixed top-0 z-50 w-full glass-effect border-b border-primary/10">
+<div class="mx-auto flex max-w-7xl items-center justify-between p-4">
+<div class="flex items-center gap-2">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-background-dark">
+<span class="material-symbols-outlined font-bold">orthopedics</span>
+</div>
+<span class="text-xl font-black tracking-tighter text-slate-900 dark:text-white uppercase">Kinetix<span class="text-primary">.</span></span>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="text-primary hover:text-primary/80 transition-colors" href="#">Inicio</a>
+<a class="hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="hover:text-primary transition-colors" href="#">Tecnología</a>
+<a class="hover:text-primary transition-colors" href="#">Testimonios</a>
+</div>
+<button class="material-symbols-outlined p-2 md:hidden">menu</button>
+</div>
+</nav>
+<main class="relative">
+<section class="relative min-h-screen w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Physiotherapist working with athlete" class="h-full w-full object-cover object-center scale-105" data-alt="Physiotherapist working with a professional athlete in a high-tech clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqSq6TsNYTHApnuIZ_-yN1WSDdkdi0CkDnYixqqgTwXyFbLOCV4jqGBgGQnta7ANVf0fEBkP5N2KbmptGKsnPXhTwY3_Xs7iR7dOUUwfxlNPS6SKReNX2d75PcVDtANudNE6scwVOwFZRf-rk-xCSm-bTbgCX6VdIiarg6vaRYUNWYxcCOeTLz5ZGpzOsdzRmTm7ZvryZJktwi-jZgOkhmM3NLEgQ9lzzTrr2XRCK0IUamDUzOj0xfU2_tDK3bjbP5IDT1NOJr03c"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center pt-20">
+<div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 mb-6 backdrop-blur-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Elite Performance Clinic</span>
+</div>
+<h1 class="max-w-4xl text-5xl font-black leading-[1.1] tracking-tight text-white md:text-7xl lg:text-8xl text-glow">
+                    Recupera tu Movimiento, <span class="text-primary">Eleva tu Rendimiento</span>
+</h1>
+<p class="mt-8 max-w-2xl text-lg font-light leading-relaxed text-slate-300 md:text-xl">
+                    Fisioterapia deportiva de élite y rehabilitación avanzada para atletas profesionales que no aceptan límites.
+                </p>
+<div class="mt-12 flex flex-col gap-4 sm:flex-row">
+<button class="flex h-14 items-center justify-center rounded-xl bg-primary px-8 text-base font-bold text-background-dark shadow-[0_0_20px_rgba(17,212,212,0.4)] hover:brightness-110 transition-all">
+                        Agendar Cita Ahora
+                    </button>
+<button class="flex h-14 items-center justify-center rounded-xl border border-white/20 bg-white/5 px-8 text-base font-bold text-white backdrop-blur-md hover:bg-white/10 transition-all">
+                        Explorar Servicios
+                    </button>
+</div>
+</div>
+</section>
+<section class="relative z-20 -mt-24 px-4 pb-24 md:px-8">
+<div class="mx-auto max-w-7xl">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="group glass-effect rounded-2xl p-8 transition-all hover:-translate-y-2 hover:border-primary/40">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">back_hand</span>
+</div>
+<h3 class="mb-3 text-2xl font-bold text-white">Manual Therapy</h3>
+<p class="text-sm leading-relaxed text-slate-400">
+                            Técnicas manuales de precisión diseñadas para el alivio inmediato del dolor y la restauración de la movilidad articular.
+                        </p>
+<div class="mt-6 flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-wider">
+                            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="group glass-effect rounded-2xl p-8 transition-all hover:-translate-y-2 hover:border-primary/40">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">monitoring</span>
+</div>
+<h3 class="mb-3 text-2xl font-bold text-white">Sports Rehabilitation</h3>
+<p class="text-sm leading-relaxed text-slate-400">
+                            Programas de recuperación enfocados en el rendimiento, utilizando tecnología de análisis biomecánico de última generación.
+                        </p>
+<div class="mt-6 flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-wider">
+                            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="group glass-effect rounded-2xl p-8 transition-all hover:-translate-y-2 hover:border-primary/40">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="mb-3 text-2xl font-bold text-white">Post-Op Recovery</h3>
+<p class="text-sm leading-relaxed text-slate-400">
+                            Acompañamiento clínico especializado para garantizar una transición segura y rápida desde la cirugía hasta la competición.
+                        </p>
+<div class="mt-6 flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-wider">
+                            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-slate-900/50 dark:bg-black/20 py-24">
+<div class="mx-auto max-w-7xl px-4 md:px-8">
+<div class="mb-16 flex flex-col items-end justify-between gap-6 md:flex-row">
+<div class="max-w-xl">
+<h2 class="text-3xl font-black text-white md:text-5xl uppercase tracking-tighter">
+                            Lo que dicen <br/><span class="text-primary">nuestros atletas</span>
+</h2>
+</div>
+<div class="flex gap-2">
+<button class="flex h-12 w-12 items-center justify-center rounded-full border border-primary/20 bg-primary/5 text-primary hover:bg-primary hover:text-background-dark transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex h-12 w-12 items-center justify-center rounded-full border border-primary/20 bg-primary/5 text-primary hover:bg-primary hover:text-background-dark transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="glass-effect rounded-2xl p-8">
+<div class="mb-6 flex gap-1 text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="mb-8 italic text-slate-300">"El nivel de atención y la tecnología que manejan en Kinetix es de otro planeta. Volví a las canchas en tiempo récord tras mi lesión de ligamentos."</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/20 overflow-hidden">
+<img alt="Athlete" data-alt="Athlete testimonial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1zVT1Jzn7a2xO7YZTXgsL6AkRG48e8VawfVvJ0VzK3cS9tzTWiygHP-yWc8C7uwQRHQakJuwzEKVIiuV4M1zhK5LSCQsbFDG6Flg5Et-2hwg0CESXUmWLJoTIyJ5d06_m0dXDsZpA8K6pTWrsPSUCUQTFf7RYlsgrU3u1LrNsfvFbp_39hRv8ioovvLWwj4KGqn6-UeAzqpH2yM6YwHDXOqCHeFKi9xgZNfWQaukQUUsFUyo8d_PfpzLmeLyUuCs5y0bAbsfXmY8"/>
+</div>
+<div>
+<h4 class="font-bold text-white">Marco Reus</h4>
+<span class="text-xs text-primary uppercase font-bold tracking-widest">Triatleta Elite</span>
+</div>
+</div>
+</div>
+<div class="glass-effect rounded-2xl p-8 border-primary/30">
+<div class="mb-6 flex gap-1 text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="mb-8 italic text-slate-300">"No solo tratan la lesión, optimizan todo tu patrón de movimiento. Es la diferencia entre jugar y dominar el juego."</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/20 overflow-hidden">
+<img alt="Athlete" data-alt="Female athlete testimonial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm3FB-QQN38JdnQmtnguInqH0s9cj0Wf2M2MIeU7qDhO65xnGRr7G8GVlYkOrBIqlbfNPKWkvf2mnTdM2bQ6EMaJWo4uqWalgvg4xGa-2EKB-ToQwyhHylrVezQ9xMP3EfZdHz67IGkjKlhnIPO6EzIni0RZNAlMKqKlmrTHORO8Gyp4o8purGL4UtpTTqsSl1dvS-3DxszlOHSZQvK4IL77tUSLfXt1ccSyiwdx_hsOtAXBN05FomcSazBE9Wuax3EIC0XhDTVtY"/>
+</div>
+<div>
+<h4 class="font-bold text-white">Elena García</h4>
+<span class="text-xs text-primary uppercase font-bold tracking-widest">Crossfit Competitor</span>
+</div>
+</div>
+</div>
+<div class="glass-effect rounded-2xl p-8">
+<div class="mb-6 flex gap-1 text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="mb-8 italic text-slate-300">"La rehabilitación post-operatoria fue impecable. Los especialistas entienden las demandas físicas del alto rendimiento."</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/20 overflow-hidden">
+<img alt="Athlete" data-alt="Male athlete headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG5V_TeQkpJi386D3QCs125EMCOC8tnWTMXzzhMF4z_hvJFOxqkJUWSxmANLX3QCISyMJjEKxEeGzD_RlYCODBT1kPM84uIo9FXlvwEj5S0PuFXq25liCHF0SY_S2radjXG11M_70vuNWqJv50RzG8fQYBFfGxlrLROHMTbmfpKamBeNNCx1eCN5q63oHnXhHBztXDnZabUV_Y94yaW3ODBArj-kTic_Qoz0h6Wol3MZqcKNaTdcfKGuv6lfdbr-nnS25dMBTW7wk"/>
+</div>
+<div>
+<h4 class="font-bold text-white">David Miller</h4>
+<span class="text-xs text-primary uppercase font-bold tracking-widest">Professional Runner</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative h-[400px] w-full overflow-hidden flex items-center justify-center px-4">
+<div class="absolute inset-0">
+<img alt="Clinic Facility" class="h-full w-full object-cover" data-alt="Futuristic gym and clinic facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnksx3j1wBfWnGv2OveKRBNY4Kxy41pWCz0YPqPYK3An1gnHII31iPfB0cWcg2HcaaJ7VrqRLb55FO1Pgxxj1SHoictUkrlEc6GriSw5JwGzn2KFNUnyEcpzBV3fqP2DlQqjsGVoJxORTrf_IskbMC0G9lAQzv0y9oEhzbUXN4YG7do0rSq7fkMTGJNgvEOPYWaM3WTCuyHxLJwVwvtsnIkg1S5ElMUJobrRZcn7C4drFk1SZ2wN0mb7QQoz3Sk5OFdpXw3dlSXAA"/>
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm"></div>
+</div>
+<div class="relative z-10 text-center">
+<h2 class="text-3xl font-black text-white md:text-5xl mb-6">¿Listo para el siguiente nivel?</h2>
+<p class="text-slate-300 mb-10 max-w-xl mx-auto">Nuestro equipo de expertos está listo para diseñar tu plan de recuperación personalizado.</p>
+<button class="h-14 rounded-xl bg-primary px-12 text-lg font-bold text-background-dark shadow-[0_0_30px_rgba(17,212,212,0.3)] hover:scale-105 transition-transform">
+                    Solicitar Valoración Gratuita
+                </button>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark border-t border-primary/10 pt-20 pb-10">
+<div class="mx-auto max-w-7xl px-4 md:px-8">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-4">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-background-dark">
+<span class="material-symbols-outlined font-bold text-sm">orthopedics</span>
+</div>
+<span class="text-xl font-black tracking-tighter text-white uppercase">Kinetix<span class="text-primary">.</span></span>
+</div>
+<p class="max-w-sm text-slate-400 leading-relaxed">
+                        Liderando la innovación en fisioterapia deportiva y rehabilitación funcional para la nueva generación de atletas de alto rendimiento.
+                    </p>
+<div class="mt-8 flex gap-4">
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">language</span>
+</a>
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="mb-6 font-bold text-white uppercase tracking-widest text-sm">Navegación</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Programas</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Especialistas</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tecnología 3D</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="mb-6 font-bold text-white uppercase tracking-widest text-sm">Ubicación</h4>
+<p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Av. Independencia 450, Piso 12<br/>
+                        Distrito Tecnológico, Ciudad de México
+                    </p>
+<div class="flex items-center gap-2 text-primary text-sm font-bold">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Ver en el mapa</span>
+</div>
+</div>
+</div>
+<div class="mt-20 border-t border-white/5 pt-8 text-center text-xs text-slate-500 uppercase tracking-widest">
+                © 2024 Kinetix Elite Performance. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+<div class="fixed bottom-6 right-6 z-50">
+<button class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-background-dark shadow-[0_0_20px_rgba(17,212,212,0.5)] md:hidden">
+<span class="material-symbols-outlined text-2xl font-bold">calendar_month</span>
+</button>
+<div class="hidden md:flex items-center gap-4 glass-effect p-2 pr-6 rounded-full border border-primary/20 shadow-2xl">
+<div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<span class="text-sm font-bold text-white uppercase tracking-wider">Acceso Express</span>
+<button class="bg-primary text-background-dark px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest hover:brightness-110 transition-all">
+                Reservar
+            </button>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-[60] md:hidden">
+<div class="flex items-center justify-around border-t border-primary/10 bg-background-dark/90 px-4 pb-3 pt-2 backdrop-blur-xl">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Servicios</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">reviews</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Reviews</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Perfil</span>
+</a>
+</div>
+</div>
+</body></html>
