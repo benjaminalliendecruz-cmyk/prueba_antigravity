@@ -1087,3 +1087,195 @@ select option {
         gap: 2rem;
     }
 }
+/* --- Stitch-Inspired Enhancements --- */
+
+.glass-effect {
+    background: rgba(16, 25, 43, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.text-glow {
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+/* Updated Badge with Pulse */
+.badge-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 229, 255, 0.1);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 100px;
+}
+
+.pulse-dot {
+    position: relative;
+    display: flex;
+    height: 10px;
+    width: 10px;
+}
+
+.pulse-dot .dot-inner {
+    position: relative;
+    display: inline-flex;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary);
+}
+
+.pulse-dot .dot-ping {
+    animation: ping 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--primary);
+    opacity: 0.75;
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Floating Action Card (Express Access) */
+.floating-action {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+}
+
+.express-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.75rem;
+    padding-right: 1.75rem;
+    border-radius: 9999px;
+    transition: var(--transition-smooth);
+}
+
+.express-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 20px 60px rgba(0, 229, 255, 0.25);
+}
+
+.express-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-darker);
+}
+
+.express-icon .material-symbols-outlined {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.express-text {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.express-btn {
+    background: var(--primary);
+    color: var(--bg-darker);
+    padding: 0.6rem 1.4rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.express-btn:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
+/* Mobile Bottom Navigation Bar */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(5, 8, 15, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 0.5rem 2.5rem 0.5rem;
+}
+
+.mobile-nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    flex: 1;
+}
+
+.mobile-nav-link.active {
+    color: var(--primary);
+}
+
+.mobile-nav-link .material-symbols-outlined {
+    font-size: 1.6rem;
+}
+
+.mobile-nav-link span {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+    }
+    .footer {
+        padding-bottom: 12rem;
+    }
+    .floating-action {
+        display: none !important;
+    }
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+}
