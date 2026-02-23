@@ -2,6 +2,10 @@
 
 ## ✅ Fase 1 & 2: Desarrollo e Integración (COMPLETADO)
 - [x] Diseño premium y animaciones.
+- [x] Responsive design (Móvil, Tablet, Desktop).
+- [x] Sincronización con GitHub (Repositorio remoto).
+
+## ⚡ Fase 2: Interactividad y Datos (Completado)
 - [x] Mascota Nano Banana.
 - [x] Efecto interactivo de agua al mover el mouse.
 - [x] Conexión real con base de datos (Supabase).
